@@ -1,24 +1,21 @@
 programa
 {
-
-	inclua biblioteca Matematica --> math
+	
 	funcao inicio()
 	{
-		inteiro a,b,c,d,r,s
+		real custoFabrica,custoConsumidor,imposto,percDistribuidor
 
-		escreva ("Digite um número para A: ")
-		leia (a)
-		escreva ("Digite um número para B: ")
-		leia(b)
-		escreva ("Digite um número para C: ")
-		leia(c)
+		escreva ("Digite o custo de Fábrica: ")
+		leia(custoFabrica)
 
-		r= math.potencia((a+b),2)
-		s=math.potencia((b+c),2)
+		
+		imposto = custoFabrica * 0.28
+		percDistribuidor = custoFabrica * 0.45
 
-		d=(r+s)/2
+		custoConsumidor = custoFabrica + imposto + percDistribuidor
 
-		escreva("O resultado é: " +  d)
+		escreva ("O Custo do carro para o consumidor é: " +  custoConsumidor)
+
 		
 	}
 }
@@ -27,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 301; 
+ * @POSICAO-CURSOR = 374; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
