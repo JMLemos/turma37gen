@@ -1,3 +1,4 @@
+package ProgramacaoSequencial;
 import java.util.Scanner;
 
 public class Lista01Exe02 {

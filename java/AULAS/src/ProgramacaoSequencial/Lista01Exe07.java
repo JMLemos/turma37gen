@@ -1,3 +1,4 @@
+package ProgramacaoSequencial;
 
 public class Lista01Exe07 {
 
