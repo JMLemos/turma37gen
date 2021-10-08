@@ -112,7 +112,7 @@ public class Carro {
 	
 	public void pararCarro() {
 		if (this.ligado == true && this.velocidade == 0 && this.marcha ==0) {
-			descerMarcha();,
+			descerMarcha();
 			desligarCarro();
 			
 		}
