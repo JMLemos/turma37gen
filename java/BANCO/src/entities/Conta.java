@@ -44,15 +44,32 @@ public abstract class Conta {
 		boolean ativarconta = true;
 	}
 	
-	public double debito (double valor) {
-		return saldo -= valor;
+	public void debito (double valor) {
+		
+		if (valor <= 0){
+			System.out.println("Impossível realizar...");
+		}
+		else if(valor > saldo){
+			System.out.println("Saldo Insdisponível...");
+		}
+		else if (saldo >= valor) {
+			
+			saldo -= valor;
+			System.out.println("OPERAÇÃO DE DÉBITO REALIZADA COM SUCESSO!");
+		}
 	}
 	
-	public double credito (double valor) {
-		return saldo += valor;
+	public void credito (double valor) {
+		
+		if (valor<0) {
+			System.out.println("Impossível realizar...");
+		}
+		else {
+		saldo += valor;
+		System.out.println("OPERAÇÃO DE CRÉDITO REALIZADA COM SUCESSO!");
+		}
 	}
 
-	
-	
+
 
 }
